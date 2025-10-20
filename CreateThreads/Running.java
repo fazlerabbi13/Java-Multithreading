@@ -1,8 +1,8 @@
 class ManRunning extends Thread{
     private String task;
 
-    public void MabRunning(String task) {
-        this.task=task;
+    public ManRunning(String string) {
+       this.task=task;
     }
 
     public void run(){
@@ -15,6 +15,9 @@ class ManRunning extends Thread{
 
 public  class Running{
     public static void main(String[] args) {
-        
+        Thread t1 = new ManRunning("high run");
+        Thread t2 = new ManRunning("low run");
+        Thread t3 = new ManRunning("medium run");
+        Thread t4 = new ManRunning("very low");
     }
 }
