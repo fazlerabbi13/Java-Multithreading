@@ -19,5 +19,14 @@ public  class Running{
         Thread t2 = new ManRunning("low run");
         Thread t3 = new ManRunning("medium run");
         Thread t4 = new ManRunning("very low");
+    
+
+        t1.start();
+        t2.start();
+        t3.start();
+        t4.start();
+    
+    
+    
     }
 }
