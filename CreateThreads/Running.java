@@ -17,6 +17,8 @@ class ManRunning extends Thread{
 
 public  class Running{
     public static void main(String[] args) {
+
+        
         Thread t1 = new ManRunning("high run");
         Thread t2 = new ManRunning("low run");
         Thread t3 = new ManRunning("medium run");
