@@ -17,9 +17,9 @@ class MainTask implements Runnable{
 
 public class ManageTask {
     public static void main(String[] args) {
-        // Thread t1 = new Thread(new MainTask("java"));
-        // Thread t2 = new Thread(new MainTask("python"));
-        // Thread t3 = new Thread(new MainTask("c++"));
+        Thread t1 = new Thread(new MainTask("java"));
+        Thread t2 = new Thread(new MainTask("python"));
+        Thread t3 = new Thread(new MainTask("c++"));
 
 
         // t1.start();
