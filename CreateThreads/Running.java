@@ -1,7 +1,9 @@
+package CreateThreads;
+
 class ManRunning extends Thread{
     private String task;
 
-    public ManRunning(String string) {
+    public ManRunning(String task) {
        this.task=task;
     }
 
