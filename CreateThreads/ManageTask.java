@@ -8,7 +8,7 @@ class MainTask implements Runnable{
     }
 
     public void run(){
-        System.out.println(task + "is being prepared " 
+        System.out.println(task + " "+ "is being prepared " 
         + Thread.currentThread().getName());
     }
 
@@ -22,8 +22,9 @@ public class ManageTask {
         Thread t3 = new Thread(new MainTask("c++"));
 
 
-        // t1.start();
-        // t2.start();
-        // t3.start();
+        t1.start();
+        t2.start();
+        t3.start();
+
     }
 }
