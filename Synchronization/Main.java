@@ -13,5 +13,14 @@ class Counter{
 }
 
 public class Main {
-    
+    public static void main(String[] args) {
+        Counter cnt = new Counter();
+
+
+        Thread t1 = new Thread(() ->{
+            for(int i = 0; i < 500; i++){
+                cnt.increment();
+            }
+        });
+    }
 }
