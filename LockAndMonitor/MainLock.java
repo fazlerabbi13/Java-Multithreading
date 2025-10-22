@@ -13,7 +13,13 @@ public class MainLock {
     static class IncrementTask implements Readable{
         public void run(){
             for(int i = 0; i < 1000; i++){
+                lock.lock();
 
+                try {
+                    sharedResource++;
+                } finally {
+                    lock.unlock();
+                }
             }
         }
     }
