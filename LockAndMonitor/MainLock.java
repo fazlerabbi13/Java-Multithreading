@@ -1,3 +1,4 @@
+package LockAndMonitor;
 
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -19,6 +20,8 @@ public class MainLock {
          }catch(InterruptedException e){
             System.out.println("Thread inturrupted");
          }
+
+         System.out.println("Final value of sharedResources: " + sharedResource);
     }
 
     static class IncrementTask implements Runnable{
